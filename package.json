@@ -1,0 +1,17 @@
+{
+  "name": "api-2",
+  "version": "1.0.0",
+  "description": "zen gm api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "*",
+    "mongoose-double": "0.0.1"
+  },
+  "author": "Ibrahim Aldridge",
+  "license": "ISC"
+}
