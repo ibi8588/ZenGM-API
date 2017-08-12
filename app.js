@@ -5,10 +5,11 @@ var mongoose = require('mongoose');
 
 Player = require('./models/player');
 
-var promise = mongoose.connect('mongodb://localhost/zengm', {
+var promise = mongoose.connect('mongodb://localhost:27017/api-2', {
   useMongoClient: true,
 });
 var db = mongoose.connection;
+var url = 'mongodb://localhost:27017/api-2';
 
 app.get('/', function(req, res){
   res.send('Testing');

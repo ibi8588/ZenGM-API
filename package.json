@@ -10,7 +10,8 @@
     "body-parser": "*",
     "express": "*",
     "mongoose": "*",
-    "mongoose-double": "0.0.1"
+    "mongoose-double": "0.0.1",
+    "mongodb": "*"
   },
   "author": "Ibrahim Aldridge",
   "license": "ISC"
