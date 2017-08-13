@@ -27,18 +27,48 @@
 
     });
 
-    function loadPlayers(json) {
-      console.log(json)
-      for (i = 0; i < json.length; i++) {
+    function loadPlayers(playerObj) {
+      console.log(playerObj)
+      for (i = 0; i < 20; i++) {
         $('#playerTarget').append(
 
-          `<table id="playerInformation">
+          `<br><table class="playerInformation">
       <tbody>
         <tr>
-        <td>Player Name:</td>
-    <td>${json[i].Name}&nbsp;</td>
+        <th>Player Name:</th>
+    <td>${playerObj[i].Name}&nbsp;</td>
     </tbody>
-    </table>`
+      <tbody>
+        <tr>
+        <th>Player Position:</th>
+    <td>${playerObj[i].Pos}&nbsp;</td>
+    </tbody>
+      <tbody>
+        <tr>
+        <th>Player Age</th>
+    <td>${playerObj[i].Age}&nbsp;</td>
+    </tbody>
+      <tbody>
+        <tr>
+        <th>Player GP:</th>
+    <td>${playerObj[i].GP}&nbsp;</td>
+    </tbody>
+      <tbody>
+        <tr>
+        <th>Player Average:</th>
+    <td>${playerObj[i].AVG}&nbsp;</td>
+    </tbody>
+      <tbody>
+        <tr>
+        <th>Player HR:</th>
+    <td>${playerObj[i].HR}&nbsp;</td>
+    </tbody>
+      <tbody>
+        <tr>
+        <th>Player RBI:</th>
+    <td>${playerObj[i].RBI}&nbsp;</td>
+    </tbody>
+    </table><br>`
         )
       }
     }
