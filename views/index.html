@@ -29,7 +29,7 @@
 
     function loadPlayers(playerObj) {
       console.log(playerObj)
-      for (i = 0; i < 20; i++) {
+      for (i = 0; i < playerObj.length; i++) {
         $('#playerTarget').append(
 
           `<br><table class="playerInformation">
@@ -55,7 +55,7 @@
     </tbody>
       <tbody>
         <tr>
-        <th>Player Average:</th>
+        <th>Player Batting Average:</th>
     <td>${playerObj[i].AVG}&nbsp;</td>
     </tbody>
       <tbody>
@@ -68,7 +68,43 @@
         <th>Player RBI:</th>
     <td>${playerObj[i].RBI}&nbsp;</td>
     </tbody>
-    </table><br>`
+    <tbody>
+      <tr>
+      <th>Player Runs:</th>
+  <td>${playerObj[i].Run}&nbsp;</td>
+  </tbody>
+  <tbody>
+    <tr>
+    <th>Player Stolen Bases:</th>
+<td>${playerObj[i].SB}&nbsp;</td>
+</tbody>
+<tbody>
+  <tr>
+  <th>Player Hits:</th>
+<td>${playerObj[i].Hits}&nbsp;</td>
+</tbody>
+<tbody>
+  <tr>
+  <th>Player Walks:</th>
+<td>${playerObj[i].BB}&nbsp;</td>
+</tbody>
+<tbody>
+  <tr>
+  <th>Player OBP:</th>
+<td>${playerObj[i].OBP}&nbsp;</td>
+</tbody>
+<tbody>
+  <tr>
+  <th>Player OPS:</th>
+<td>${playerObj[i].OPS}&nbsp;</td>
+</tbody>
+<tbody>
+  <tr>
+  <th>Season:</th>
+<td>${playerObj[i].Season}&nbsp;</td>
+</tbody>
+</table><br>
+  `
         )
       }
     }
